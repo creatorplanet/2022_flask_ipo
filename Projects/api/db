@@ -1,0 +1,21 @@
+CREATE TABLE ipo_calendar(
+    id INT NOT NULL AUTO_INCREMENT,
+    company VARCHAR(30),
+    ipo_date VARCHAR(16),
+    confirmed_price VARCHAR(11) ,
+    hope_price VARCHAR(20),
+    competition_rate VARCHAR(20) ,
+    organizer VARCHAR(100),
+    analysis_url VARCHAR(100),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE new_ipo(
+    id INT NOT NULL AUTO_INCREMENT,
+    company_id VARCHAR(30),
+    new_ipo_date VARCHAR(10),
+    confirmed_price_id VARCHAR(10),
+    start_price VARCHAR(10),
+    end_price VARCHAR(10),
+    PRIMARY KEY (id)
+);
